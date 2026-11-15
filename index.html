@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Minha Semana · Agenda escolar</title></head><body><p>Carregando agenda…</p>
+<script>window.partes=[];</script>
+<script src="partes/parte-001.js"></script>
+<script src="partes/parte-002.js"></script>
+<script src="partes/parte-003.js"></script>
+<script src="partes/parte-004.js"></script>
+<script src="partes/parte-005.js"></script>
+<script src="partes/parte-006.js"></script>
+<script src="partes/parte-007.js"></script>
+<script src="partes/parte-008.js"></script>
+<script src="partes/parte-009.js"></script>
+<script src="partes/parte-010.js"></script>
+<script src="partes/parte-011.js"></script>
+<script>try { if(window.partes.length !== 11) throw new Error("Partes da agenda indisponíveis"); const b=atob(window.partes.join("")); const bytes=Uint8Array.from(b,c=>c.charCodeAt(0)); const html=new TextDecoder("utf-8",{fatal:true}).decode(bytes); document.open();document.write(html);document.close(); } catch(e) { document.body.textContent="Não foi possível carregar a agenda. Verifique a conexão e recarregue a página."; console.error(e); }</script></body></html>
