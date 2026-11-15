@@ -12,4 +12,4 @@
 <script src="partes/parte-009.js"></script>
 <script src="partes/parte-010.js"></script>
 <script src="partes/parte-011.js"></script>
-<script>try { if(window.partes.length !== 11) throw new Error("Partes da agenda indisponíveis"); const b=atob(window.partes.join("")); const bytes=Uint8Array.from(b,c=>c.charCodeAt(0)); const html=new TextDecoder("utf-8",{fatal:true}).decode(bytes); document.open();document.write(html);document.close(); } catch(e) { document.body.textContent="Não foi possível carregar a agenda. Verifique a conexão e recarregue a página."; console.error(e); }</script></body></html>
+<script>window.addEventListener("load",()=>{try { if(window.partes.length !== 11) throw new Error("Partes da agenda indisponíveis"); const b=atob(window.partes.join("")); const bytes=Uint8Array.from(b,c=>c.charCodeAt(0)); const html=new TextDecoder("utf-8",{fatal:true}).decode(bytes); document.open();document.write(html);document.close(); } catch(e) { document.body.textContent="Não foi possível carregar a agenda. Verifique a conexão e recarregue a página."; console.error(e); }});</script></body></html>
